@@ -1,6 +1,6 @@
 cv:
   name: Vinayak Kamat
-  headline: Junior AI/ML Engineer
+  headline: AI/ML Engineer | LLM, RAG and Finance AI
   location: Mumbai, India
   email: vinayakkamat001@gmail.com
   phone: "+917208114510"
@@ -11,21 +11,19 @@ cv:
       username: vinayakkamatcodes
   sections:
     summary:
-      - Junior AI/ML Engineer at KAN Innovations building production-ready AI systems. Experience with end-to-end RAG pipelines, PyTorch-to-ONNX inference optimization, and ML services on AWS (Lambda, ECR, DynamoDB). Built on-device AI with llama.cpp and a real-time hallucination detection gateway. Pursuing an MSc in Financial Engineering.
+      - AI/ML Engineer with 1 year 8 months at KAN Innovations building production ML and LLM systems in Python. Experience with RAG pipelines, prompt engineering, ONNX inference optimization, and AWS deployments. Built Aethelgard, a real-time LLM hallucination detector, and a prototype financial AI agent for data retrieval and reasoning. Pursuing an MSc in Financial Engineering.
 
     skills:
+      - label: LLM and RAG
+        details: RAG pipelines, prompt engineering, LangChain, LlamaIndex, Chroma, hallucination detection, llama.cpp (GGUF)
       - label: Languages
-        details: Python, C++, Dart, JavaScript
-      - label: ML & AI
-        details: PyTorch, Transformers, OpenCV, spaCy
-      - label: LLM & RAG
-        details: LangChain, LlamaIndex, GGUF models, prompt engineering, Chroma
-      - label: MLOps
-        details: MLflow, model versioning, experiment tracking
-      - label: Backend & DevOps
-        details: FastAPI, Flask, Docker, AWS (Lambda, S3, ECR, DynamoDB)
-      - label: Data
-        details: Pandas, NumPy
+        details: Python, JavaScript, C++, Dart
+      - label: Backend and Cloud
+        details: FastAPI, Flask, REST APIs, Docker, AWS (Lambda, ECR, S3, DynamoDB)
+      - label: ML and NLP
+        details: PyTorch, Transformers, spaCy, ONNX, OpenCV, MLflow
+      - label: Data and Monitoring
+        details: Pandas, NumPy, Datadog (metrics streaming)
 
     experience:
       - company: KAN Innovations
@@ -34,38 +32,40 @@ cv:
         start_date: 2025-05
         end_date: present
         highlights:
-          - Improved model calibration to enhance reliability of ML predictions in production
-          - Optimized inference by converting PyTorch models to ONNX for faster runtime performance
-          - Integrated ML models into production pipelines using AWS (Lambda, ECR, S3, DynamoDB)
-          - Built and evaluated Retrieval-Augmented Generation (RAG) pipelines
-          - Used MLflow for experiment tracking, model versioning, and reproducible workflows
+          - Built and evaluated end-to-end RAG pipelines covering retrieval, prompting, and generation
+          # If you can, add the use case and one result here, e.g. the retrieval or answer quality you measured.
+          - Deployed ML inference services on AWS Lambda using Docker images on ECR, with S3 and DynamoDB for storage and state
+          - Converted PyTorch models to ONNX to speed up inference in production
+          # If you have real numbers, add them here, e.g. latency before and after.
+          - Improved model calibration so prediction confidence better reflects real accuracy, making outputs more reliable in production
+          - Tracked experiments and versioned models with MLflow for reproducible workflows
       - company: KAN Innovations
         position: ML Engineer Intern
         location: Mumbai, Maharashtra
         start_date: 2025-02
         end_date: 2025-05
         highlights:
-          - Built a PyTorch-based ulcer detection model achieving ~85% accuracy
-          - Improved performance of an eye posture detection model
+          - Built a PyTorch ulcer detection model reaching about 85% accuracy
+          - Improved the performance of an eye posture detection model
 
     projects:
-      - name: Aethelgard
-        summary: AI governance gateway for real-time analysis of LLM outputs to detect hallucinations and risk factors.
-        highlights:
-          - Built a real-time LLM response analyzer using a secondary "surgeon" model for semantic risk assessment
-          - Implemented a FastAPI gateway streaming risk metrics to Datadog
-          - Designed automated hallucination detection logic for safer AI deployments
-      - name: nanoMind
-        summary: On-device AI chat app running LLMs completely offline using llama.cpp and Kotlin.
-        highlights:
-          - Enabled offline GGUF model inference on Android devices
-          - Implemented real-time token streaming using Kotlin Coroutines and Jetpack Compose
-          - Optimized LLM loading with ARM-specific performance improvements
       - name: Financial AI Agent (Demo)
-        summary: Prototype AI agent for financial data retrieval and reasoning using Python and language models.
+        summary: Prototype agent for financial data retrieval and reasoning in Python.
         highlights:
-          - Built retrieval and reasoning pipelines for financial insights
-          - Implemented modular Python components for query routing and response refinement
+          - Built modular retrieval and reasoning pipelines for financial insights
+          - Implemented query routing and response refinement to keep answers focused on the finance domain
+          # Add one concrete detail if true, e.g. the data source or the kinds of questions it answers.
+      - name: Aethelgard
+        summary: Real-time AI governance gateway that analyzes LLM outputs for hallucinations and risk.
+        highlights:
+          - Built a FastAPI gateway that analyzes LLM responses in real time, using a secondary "surgeon" model for semantic risk scoring
+          - Designed automated hallucination detection logic to support safer, more grounded LLM deployments
+          - Streamed risk metrics to Datadog for monitoring of LLM output quality
+      - name: nanoMind
+        summary: Android chat app that runs LLMs fully offline with llama.cpp and Kotlin.
+        highlights:
+          - Enabled on-device GGUF model inference with real-time token streaming using Kotlin Coroutines and Jetpack Compose
+          - Optimized model loading with ARM-specific performance improvements
 
     education:
       - institution: WorldQuant University
@@ -83,8 +83,6 @@ cv:
 
     achievements:
       - Qualified the Graduate Aptitude Test in Engineering (GATE)
-      - Participated in Kaggle competitions focused on applied machine learning
-      - Active open-source contributor with AI/ML projects on GitHub
 
 design:
   theme: classic

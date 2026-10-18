@@ -88,7 +88,7 @@
 
 = Vinayak Kamat
 
-  #headline([Junior AI\/ML Engineer])
+  #headline([AI\/ML Engineer | LLM, RAG and Finance AI])
 
 #connections(
   [#connection-with-icon("location-dot")[Mumbai, India]],
@@ -101,21 +101,19 @@
 
 == Summary
 
-Junior AI\/ML Engineer at KAN Innovations building production-ready AI systems. Experience with end-to-end RAG pipelines, PyTorch-to-ONNX inference optimization, and ML services on AWS (Lambda, ECR, DynamoDB). Built on-device AI with llama.cpp and a real-time hallucination detection gateway. Pursuing an MSc in Financial Engineering.
+AI\/ML Engineer with 1 year 8 months at KAN Innovations building production ML and LLM systems in Python. Experience with RAG pipelines, prompt engineering, ONNX inference optimization, and AWS deployments. Built Aethelgard, a real-time LLM hallucination detector, and a prototype financial AI agent for data retrieval and reasoning. Pursuing an MSc in Financial Engineering.
 
 == Skills
 
-#strong[Languages:] Python, C++, Dart, JavaScript
+#strong[LLM and RAG:] RAG pipelines, prompt engineering, LangChain, LlamaIndex, Chroma, hallucination detection, llama.cpp (GGUF)
 
-#strong[ML & AI:] PyTorch, Transformers, OpenCV, spaCy
+#strong[Languages:] Python, JavaScript, C++, Dart
 
-#strong[LLM & RAG:] LangChain, LlamaIndex, GGUF models, prompt engineering, Chroma
+#strong[Backend and Cloud:] FastAPI, Flask, REST APIs, Docker, AWS (Lambda, ECR, S3, DynamoDB)
 
-#strong[MLOps:] MLflow, model versioning, experiment tracking
+#strong[ML and NLP:] PyTorch, Transformers, spaCy, ONNX, OpenCV, MLflow
 
-#strong[Backend & DevOps:] FastAPI, Flask, Docker, AWS (Lambda, S3, ECR, DynamoDB)
-
-#strong[Data:] Pandas, NumPy
+#strong[Data and Monitoring:] Pandas, NumPy, Datadog (metrics streaming)
 
 == Experience
 
@@ -123,15 +121,15 @@ Junior AI\/ML Engineer at KAN Innovations building production-ready AI systems. 
   [
     #strong[KAN Innovations], Junior AI\/ML Engineer
 
-    - Improved model calibration to enhance reliability of ML predictions in production
+    - Built and evaluated end-to-end RAG pipelines covering retrieval, prompting, and generation
 
-    - Optimized inference by converting PyTorch models to ONNX for faster runtime performance
+    - Deployed ML inference services on AWS Lambda using Docker images on ECR, with S3 and DynamoDB for storage and state
 
-    - Integrated ML models into production pipelines using AWS (Lambda, ECR, S3, DynamoDB)
+    - Converted PyTorch models to ONNX to speed up inference in production
 
-    - Built and evaluated Retrieval-Augmented Generation (RAG) pipelines
+    - Improved model calibration so prediction confidence better reflects real accuracy, making outputs more reliable in production
 
-    - Used MLflow for experiment tracking, model versioning, and reproducible workflows
+    - Tracked experiments and versioned models with MLflow for reproducible workflows
 
   ],
   [
@@ -150,9 +148,9 @@ Junior AI\/ML Engineer at KAN Innovations building production-ready AI systems. 
   [
     #strong[KAN Innovations], ML Engineer Intern
 
-    - Built a PyTorch-based ulcer detection model achieving \~85\% accuracy
+    - Built a PyTorch ulcer detection model reaching about 85\% accuracy
 
-    - Improved performance of an eye posture detection model
+    - Improved the performance of an eye posture detection model
 
   ],
   [
@@ -171,15 +169,30 @@ Junior AI\/ML Engineer at KAN Innovations building production-ready AI systems. 
 
 #regular-entry(
   [
+    #strong[Financial AI Agent (Demo)]
+
+    #summary[Prototype agent for financial data retrieval and reasoning in Python.]
+
+    - Built modular retrieval and reasoning pipelines for financial insights
+
+    - Implemented query routing and response refinement to keep answers focused on the finance domain
+
+  ],
+  [
+  ],
+)
+
+#regular-entry(
+  [
     #strong[Aethelgard]
 
-    #summary[AI governance gateway for real-time analysis of LLM outputs to detect hallucinations and risk factors.]
+    #summary[Real-time AI governance gateway that analyzes LLM outputs for hallucinations and risk.]
 
-    - Built a real-time LLM response analyzer using a secondary \"surgeon\" model for semantic risk assessment
+    - Built a FastAPI gateway that analyzes LLM responses in real time, using a secondary \"surgeon\" model for semantic risk scoring
 
-    - Implemented a FastAPI gateway streaming risk metrics to Datadog
+    - Designed automated hallucination detection logic to support safer, more grounded LLM deployments
 
-    - Designed automated hallucination detection logic for safer AI deployments
+    - Streamed risk metrics to Datadog for monitoring of LLM output quality
 
   ],
   [
@@ -190,28 +203,11 @@ Junior AI\/ML Engineer at KAN Innovations building production-ready AI systems. 
   [
     #strong[nanoMind]
 
-    #summary[On-device AI chat app running LLMs completely offline using llama.cpp and Kotlin.]
+    #summary[Android chat app that runs LLMs fully offline with llama.cpp and Kotlin.]
 
-    - Enabled offline GGUF model inference on Android devices
+    - Enabled on-device GGUF model inference with real-time token streaming using Kotlin Coroutines and Jetpack Compose
 
-    - Implemented real-time token streaming using Kotlin Coroutines and Jetpack Compose
-
-    - Optimized LLM loading with ARM-specific performance improvements
-
-  ],
-  [
-  ],
-)
-
-#regular-entry(
-  [
-    #strong[Financial AI Agent (Demo)]
-
-    #summary[Prototype AI agent for financial data retrieval and reasoning using Python and language models.]
-
-    - Built retrieval and reasoning pipelines for financial insights
-
-    - Implemented modular Python components for query routing and response refinement
+    - Optimized model loading with ARM-specific performance improvements
 
   ],
   [
@@ -255,7 +251,3 @@ Junior AI\/ML Engineer at KAN Innovations building production-ready AI systems. 
 == Achievements
 
 Qualified the Graduate Aptitude Test in Engineering (GATE)
-
-Participated in Kaggle competitions focused on applied machine learning
-
-Active open-source contributor with AI\/ML projects on GitHub
