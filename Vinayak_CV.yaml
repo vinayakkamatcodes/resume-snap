@@ -1,3 +1,4 @@
+
 cv:
   name: Vinayak Kamat
   headline: Machine Learning Engineer | Production ML, Model Monitoring and Financial AI
@@ -11,21 +12,31 @@ cv:
       username: vinayakkamatcodes
   sections:
     summary:
-      - Machine Learning Engineer with 1 year 8 months at KAN Innovations building, calibrating, and deploying production ML models in Python and PyTorch. Experience with real-time model-output monitoring, ONNX inference optimization, MLflow-based experiment tracking, and AWS deployment. Built Aethelgard, a real-time gateway that scores LLM outputs for risk and streams metrics to Datadog. Pursuing an MSc in Financial Engineering.
+      - AI/ML Engineer with 1 year 8 months at KAN Innovations, now owning the deployment and monitoring of production ML models. Experience with PyTorch, model calibration, ONNX inference optimization, MLflow-based tracking, drift detection, and AWS deployment. Built Aethelgard, a real-time gateway that scores LLM outputs for risk and streams metrics to Datadog. Pursuing an MSc in Financial Engineering.
 
     experience:
+      - company: KAN Innovations
+        position: AI/ML Engineer
+        location: Mumbai, Maharashtra
+        start_date: 2026-07
+        end_date: present
+        highlights:
+          - Own the ML project end to end, including deployment and ongoing monitoring of ML models and agents in production
+          - Improved model latency for production inference, including converting PyTorch models to ONNX
+          # If the ONNX work happened in your earlier role, move it down to the Junior role.
+          - Promoted from Junior AI/ML Engineer after 14 months based on performance
+          # Keep the line above only if your promotion letter supports it. Otherwise delete it.
       - company: KAN Innovations
         position: Junior AI/ML Engineer
         location: Mumbai, Maharashtra
         start_date: 2025-05
-        end_date: present
+        end_date: 2026-06
         highlights:
+          - Integrated ML models into production pipelines and deployed them on AWS (Lambda, ECR, S3, DynamoDB)
           - Improved model calibration so prediction confidence better reflects real accuracy, making production predictions more reliable
           # If you have a metric, add it here, e.g. calibration error before and after.
-          - Converted PyTorch models to ONNX to speed up inference in production
-          # If you have real numbers, add them here, e.g. latency before and after.
-          - Deployed ML services on AWS (Lambda, ECR, S3, DynamoDB) and integrated models into production pipelines
-          - Tracked experiments and versioned models with MLflow so results were reproducible and auditable
+          - Evaluated models and monitored them for drift, and tracked experiments and model versions with MLflow
+          # Keep the drift detection wording only if you really did it. It matters for this role.
           - Built and evaluated Retrieval-Augmented Generation (RAG) pipelines, measuring output quality across retrieval and generation
       - company: KAN Innovations
         position: ML Engineer Intern
@@ -34,7 +45,7 @@ cv:
         end_date: 2025-05
         highlights:
           - Built a PyTorch ulcer detection model reaching about 85% accuracy
-          - Improved the performance of an eye posture detection model
+          - Improved the performance of an eye posture detection model using OpenCV
 
     projects:
       - name: Aethelgard
@@ -55,7 +66,7 @@ cv:
         details: Python, PyTorch, Transformers, spaCy, OpenCV, ONNX, model calibration
         # Add scikit-learn, XGBoost, or TensorFlow here ONLY if you have really used them.
       - label: MLOps and Monitoring
-        details: MLflow (experiment tracking, model versioning), Datadog (metrics streaming), Docker
+        details: MLflow (experiment tracking, model versioning), model monitoring and drift detection, Datadog, Docker
       - label: Backend and Cloud
         details: FastAPI, Flask, REST APIs, AWS (Lambda, ECR, S3, DynamoDB)
       - label: Data
@@ -69,7 +80,7 @@ cv:
         start_date: 2025-09
         end_date: 2027-05
       - institution: Punjab Technical University
-        area: Computer Science
+        area: Computer Science and Engineering
         degree: B.Tech
         location: Punjab, India
         start_date: 2021-09

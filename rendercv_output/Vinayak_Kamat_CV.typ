@@ -81,7 +81,7 @@
   date: datetime(
     year: 2026,
     month: 10,
-    day: 18,
+    day: 20,
   ),
 )
 
@@ -101,21 +101,42 @@
 
 == Summary
 
-Machine Learning Engineer with 1 year 8 months at KAN Innovations building, calibrating, and deploying production ML models in Python and PyTorch. Experience with real-time model-output monitoring, ONNX inference optimization, MLflow-based experiment tracking, and AWS deployment. Built Aethelgard, a real-time gateway that scores LLM outputs for risk and streams metrics to Datadog. Pursuing an MSc in Financial Engineering.
+AI\/ML Engineer with 1 year 8 months at KAN Innovations, now owning the deployment and monitoring of production ML models. Experience with PyTorch, model calibration, ONNX inference optimization, MLflow-based tracking, drift detection, and AWS deployment. Built Aethelgard, a real-time gateway that scores LLM outputs for risk and streams metrics to Datadog. Pursuing an MSc in Financial Engineering.
 
 == Experience
 
 #regular-entry(
   [
+    #strong[KAN Innovations], AI\/ML Engineer
+
+    - Own the ML project end to end, including deployment and ongoing monitoring of ML models and agents in production
+
+    - Improved model latency for production inference, including converting PyTorch models to ONNX
+
+    - Promoted from Junior AI\/ML Engineer after 14 months based on performance
+
+  ],
+  [
+    Mumbai, Maharashtra
+
+    July 2026 – present
+
+    
+
+    4 months
+
+  ],
+)
+
+#regular-entry(
+  [
     #strong[KAN Innovations], Junior AI\/ML Engineer
+
+    - Integrated ML models into production pipelines and deployed them on AWS (Lambda, ECR, S3, DynamoDB)
 
     - Improved model calibration so prediction confidence better reflects real accuracy, making production predictions more reliable
 
-    - Converted PyTorch models to ONNX to speed up inference in production
-
-    - Deployed ML services on AWS (Lambda, ECR, S3, DynamoDB) and integrated models into production pipelines
-
-    - Tracked experiments and versioned models with MLflow so results were reproducible and auditable
+    - Evaluated models and monitored them for drift, and tracked experiments and model versions with MLflow
 
     - Built and evaluated Retrieval-Augmented Generation (RAG) pipelines, measuring output quality across retrieval and generation
 
@@ -123,11 +144,11 @@ Machine Learning Engineer with 1 year 8 months at KAN Innovations building, cali
   [
     Mumbai, Maharashtra
 
-    May 2025 – present
+    May 2025 – June 2026
 
     
 
-    1 year 6 months
+    1 year 2 months
 
   ],
 )
@@ -138,7 +159,7 @@ Machine Learning Engineer with 1 year 8 months at KAN Innovations building, cali
 
     - Built a PyTorch ulcer detection model reaching about 85\% accuracy
 
-    - Improved the performance of an eye posture detection model
+    - Improved the performance of an eye posture detection model using OpenCV
 
   ],
   [
@@ -191,7 +212,7 @@ Machine Learning Engineer with 1 year 8 months at KAN Innovations building, cali
 
 #strong[ML and Frameworks:] Python, PyTorch, Transformers, spaCy, OpenCV, ONNX, model calibration
 
-#strong[MLOps and Monitoring:] MLflow (experiment tracking, model versioning), Datadog (metrics streaming), Docker
+#strong[MLOps and Monitoring:] MLflow (experiment tracking, model versioning), model monitoring and drift detection, Datadog, Docker
 
 #strong[Backend and Cloud:] FastAPI, Flask, REST APIs, AWS (Lambda, ECR, S3, DynamoDB)
 
@@ -217,7 +238,7 @@ Machine Learning Engineer with 1 year 8 months at KAN Innovations building, cali
 
 #education-entry(
   [
-    #strong[Punjab Technical University], Computer Science
+    #strong[Punjab Technical University], Computer Science and Engineering
 
   ],
   [
