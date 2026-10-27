@@ -2,29 +2,29 @@
 
 - Phone: +91 72081 14510
 - Email: [vinayakkamat001@gmail.com](mailto:vinayakkamat001@gmail.com)
-- Location: Mumbai, India
+- Location: Mumbai, India (Open to Remote)
 - LinkedIn: [vinayak-kamat-81b8901a0](https://linkedin.com/in/vinayak-kamat-81b8901a0)
 - GitHub: [vinayakkamatcodes](https://github.com/vinayakkamatcodes)
 
 
 # Summary
-Junior AI/ML Engineer at KAN Innovations building production-ready AI systems. Experience with end-to-end RAG pipelines, PyTorch-to-ONNX inference optimization, and ML services on AWS (Lambda, ECR, DynamoDB). Built on-device AI with llama.cpp and a real-time hallucination detection gateway. Pursuing an MSc in Financial Engineering.
+ML Engineer with hands-on experience across the end-to-end vision workflow dataset creation, model training, ONNX optimization for deployment, and continuous evaluation. Built detection models in PyTorch (ulcer detection ~85% accuracy, eye-posture detection) and evaluation pipelines that gate releases on measurable quality. Comfortable reading and implementing papers, and working across backend, data, and product surfaces in a small team.
 
 # Skills
-**Languages:** Python, C++, Dart, JavaScript
+**ML & Computer Vision:** PyTorch, TensorFlow, Transformers, OpenCV, Object Detection, Model Training, Losses, Generalisation, Evaluation, Statistics
 
-**ML & AI:** PyTorch, Transformers, OpenCV, spaCy
+**Data & Evaluation Pipelines:** Dataset Creation, Data Curation, Benchmarking, Graders, Continuous Evaluation, Pandas, NumPy
 
-**LLM & RAG:** LangChain, LlamaIndex, GGUF models, prompt engineering, Chroma
+**Deployment & Optimization:** ONNX, Model Optimization for Deployment, Docker, AWS (Lambda, S3, ECR, DynamoDB), GPU Workloads
 
-**MLOps:** MLflow, model versioning, experiment tracking
+**LLM & Agents:** RAG, LangChain, LlamaIndex, Prompt Engineering, Agentic Workflows, Chroma
 
-**Backend & DevOps:** FastAPI, Flask, Docker, AWS (Lambda, S3, ECR, DynamoDB)
+**Backend & Frontend:** Python, FastAPI, Flask, REST APIs, React (basics), Git, SQL
 
-**Data:** Pandas, NumPy
+**Tooling:** Claude Code / Cursor (agentic coding), MLflow, Experiment Tracking
 
 # Experience
-## **KAN Innovations**, Junior AI/ML Engineer
+## **KAN Innovations**, ML Engineer
 
 Mumbai, Maharashtra
 
@@ -34,15 +34,13 @@ May 2025 – present
 
 1 year 6 months
 
-- Improved model calibration to enhance reliability of ML predictions in production
+- Built and optimized vision models in PyTorch, then converted them to ONNX for faster on-prem/mobile inference, balancing accuracy against deployment latency
 
-- Optimized inference by converting PyTorch models to ONNX for faster runtime performance
+- Built data and evaluation pipelines for model releases, defining quality checks and benchmarks so changes were measured before shipping
 
-- Integrated ML models into production pipelines using AWS (Lambda, ECR, S3, DynamoDB)
+- Built Vidur, a data pipeline that serializes results to JSON and uploads to S3 asynchronously so cloud transfer does not block execution
 
-- Built and evaluated Retrieval-Augmented Generation (RAG) pipelines
-
-- Used MLflow for experiment tracking, model versioning, and reproducible workflows
+- Deployed ML services on AWS (Lambda, ECR, DynamoDB) and used MLflow for experiment tracking, model versioning, and reproducible workflows
 
 
 
@@ -56,44 +54,38 @@ Feb 2025 – May 2025
 
 3 months
 
-- Built a PyTorch-based ulcer detection model achieving ~85% accuracy
+- Built a PyTorch-based ulcer detection model achieving ~85% accuracy, from dataset preparation through training and evaluation
 
-- Improved performance of an eye posture detection model
+- Improved an existing eye-posture detection model through data and training refinements, measuring gains on held-out footage
 
 
 
 # Projects
-## **Aethelgard**
+## **Ulcer Detection — End-to-End Vision Model**
 
-AI governance gateway for real-time analysis of LLM outputs to detect hallucinations and risk factors.
+PyTorch detection model trained, evaluated, and optimized for deployment.
 
-- Built a real-time LLM response analyzer using a secondary "surgeon" model for semantic risk assessment
+- Prepared and curated training data, trained the model, and evaluated on held-out sets (~85% accuracy)
 
-- Implemented a FastAPI gateway streaming risk metrics to Datadog
-
-- Designed automated hallucination detection logic for safer AI deployments
+- Converted to ONNX to reduce inference latency for deployment on constrained hardware
 
 
 
-## **nanoMind**
+## **Aethelgard — Evaluation & Guardrails for LLM Outputs**
 
-On-device AI chat app running LLMs completely offline using llama.cpp and Kotlin.
+Real-time evaluation gateway that grades model outputs and flags risk.
 
-- Enabled offline GGUF model inference on Android devices
+- Built a FastAPI gateway using a secondary model to grade outputs for semantic risk and hallucinations
 
-- Implemented real-time token streaming using Kotlin Coroutines and Jetpack Compose
-
-- Optimized LLM loading with ARM-specific performance improvements
+- Streamed evaluation metrics to Datadog for continuous monitoring, with fallbacks so low-confidence outputs degrade safely
 
 
 
-## **Financial AI Agent (Demo)**
+## **nanoMind — On-Device Inference Optimization**
 
-Prototype AI agent for financial data retrieval and reasoning using Python and language models.
+Offline LLM app demonstrating low-latency inference on constrained hardware.
 
-- Built retrieval and reasoning pipelines for financial insights
-
-- Implemented modular Python components for query routing and response refinement
+- Ran GGUF models on Android via llama.cpp with ARM-specific optimizations and real-time token streaming
 
 
 
@@ -123,8 +115,6 @@ Sept 2021 – May 2025
 
 
 # Achievements
-Qualified the Graduate Aptitude Test in Engineering (GATE)
+Qualified GATE (Graduate Aptitude Test in Engineering)
 
-Participated in Kaggle competitions focused on applied machine learning
-
-Active open-source contributor with AI/ML projects on GitHub
+Active open-source contributor with ML projects on GitHub

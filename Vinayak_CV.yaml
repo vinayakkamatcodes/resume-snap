@@ -1,7 +1,7 @@
 cv:
   name: Vinayak Kamat
-  headline: Junior AI/ML Engineer
-  location: Mumbai, India
+  headline: ML Engineer | Computer Vision, Evaluation & Data Pipelines
+  location: Mumbai, India (Open to Remote)
   email: vinayakkamat001@gmail.com
   phone: "+917208114510"
   social_networks:
@@ -11,61 +11,57 @@ cv:
       username: vinayakkamatcodes
   sections:
     summary:
-      - Junior AI/ML Engineer at KAN Innovations building production-ready AI systems. Experience with end-to-end RAG pipelines, PyTorch-to-ONNX inference optimization, and ML services on AWS (Lambda, ECR, DynamoDB). Built on-device AI with llama.cpp and a real-time hallucination detection gateway. Pursuing an MSc in Financial Engineering.
+      - ML Engineer with hands-on experience across the end-to-end vision workflow dataset creation, model training, ONNX optimization for deployment, and continuous evaluation. Built detection models in PyTorch (ulcer detection ~85% accuracy, eye-posture detection) and evaluation pipelines that gate releases on measurable quality. Comfortable reading and implementing papers, and working across backend, data, and product surfaces in a small team.
 
     skills:
-      - label: Languages
-        details: Python, C++, Dart, JavaScript
-      - label: ML & AI
-        details: PyTorch, Transformers, OpenCV, spaCy
-      - label: LLM & RAG
-        details: LangChain, LlamaIndex, GGUF models, prompt engineering, Chroma
-      - label: MLOps
-        details: MLflow, model versioning, experiment tracking
-      - label: Backend & DevOps
-        details: FastAPI, Flask, Docker, AWS (Lambda, S3, ECR, DynamoDB)
-      - label: Data
-        details: Pandas, NumPy
+      - label: ML & Computer Vision
+        details: PyTorch, TensorFlow, Transformers, OpenCV, Object Detection, Model Training, Losses, Generalisation, Evaluation, Statistics
+      - label: Data & Evaluation Pipelines
+        details: Dataset Creation, Data Curation, Benchmarking, Graders, Continuous Evaluation, Pandas, NumPy
+      - label: Deployment & Optimization
+        details: ONNX, Model Optimization for Deployment, Docker, AWS (Lambda, S3, ECR, DynamoDB), GPU Workloads
+      - label: LLM & Agents
+        details: RAG, LangChain, LlamaIndex, Prompt Engineering, Agentic Workflows, Chroma
+      - label: Backend & Frontend
+        details: Python, FastAPI, Flask, REST APIs, React (basics), Git, SQL
+      - label: Tooling
+        details: Claude Code / Cursor (agentic coding), MLflow, Experiment Tracking
 
     experience:
       - company: KAN Innovations
-        position: Junior AI/ML Engineer
+        position: ML Engineer
         location: Mumbai, Maharashtra
         start_date: 2025-05
         end_date: present
         highlights:
-          - Improved model calibration to enhance reliability of ML predictions in production
-          - Optimized inference by converting PyTorch models to ONNX for faster runtime performance
-          - Integrated ML models into production pipelines using AWS (Lambda, ECR, S3, DynamoDB)
-          - Built and evaluated Retrieval-Augmented Generation (RAG) pipelines
-          - Used MLflow for experiment tracking, model versioning, and reproducible workflows
+          - Built and optimized vision models in PyTorch, then converted them to ONNX for faster on-prem/mobile inference, balancing accuracy against deployment latency
+          - Built data and evaluation pipelines for model releases, defining quality checks and benchmarks so changes were measured before shipping
+          - Built Vidur, a data pipeline that serializes results to JSON and uploads to S3 asynchronously so cloud transfer does not block execution
+          - Deployed ML services on AWS (Lambda, ECR, DynamoDB) and used MLflow for experiment tracking, model versioning, and reproducible workflows
       - company: KAN Innovations
         position: ML Engineer Intern
         location: Mumbai, Maharashtra
         start_date: 2025-02
         end_date: 2025-05
         highlights:
-          - Built a PyTorch-based ulcer detection model achieving ~85% accuracy
-          - Improved performance of an eye posture detection model
+          - Built a PyTorch-based ulcer detection model achieving ~85% accuracy, from dataset preparation through training and evaluation
+          - Improved an existing eye-posture detection model through data and training refinements, measuring gains on held-out footage
 
     projects:
-      - name: Aethelgard
-        summary: AI governance gateway for real-time analysis of LLM outputs to detect hallucinations and risk factors.
+      - name: Ulcer Detection — End-to-End Vision Model
+        summary: PyTorch detection model trained, evaluated, and optimized for deployment.
         highlights:
-          - Built a real-time LLM response analyzer using a secondary "surgeon" model for semantic risk assessment
-          - Implemented a FastAPI gateway streaming risk metrics to Datadog
-          - Designed automated hallucination detection logic for safer AI deployments
-      - name: nanoMind
-        summary: On-device AI chat app running LLMs completely offline using llama.cpp and Kotlin.
+          - Prepared and curated training data, trained the model, and evaluated on held-out sets (~85% accuracy)
+          - Converted to ONNX to reduce inference latency for deployment on constrained hardware
+      - name: Aethelgard — Evaluation & Guardrails for LLM Outputs
+        summary: Real-time evaluation gateway that grades model outputs and flags risk.
         highlights:
-          - Enabled offline GGUF model inference on Android devices
-          - Implemented real-time token streaming using Kotlin Coroutines and Jetpack Compose
-          - Optimized LLM loading with ARM-specific performance improvements
-      - name: Financial AI Agent (Demo)
-        summary: Prototype AI agent for financial data retrieval and reasoning using Python and language models.
+          - Built a FastAPI gateway using a secondary model to grade outputs for semantic risk and hallucinations
+          - Streamed evaluation metrics to Datadog for continuous monitoring, with fallbacks so low-confidence outputs degrade safely
+      - name: nanoMind — On-Device Inference Optimization
+        summary: Offline LLM app demonstrating low-latency inference on constrained hardware.
         highlights:
-          - Built retrieval and reasoning pipelines for financial insights
-          - Implemented modular Python components for query routing and response refinement
+          - Ran GGUF models on Android via llama.cpp with ARM-specific optimizations and real-time token streaming
 
     education:
       - institution: WorldQuant University
@@ -82,16 +78,13 @@ cv:
         end_date: 2025-05
 
     achievements:
-      - Qualified the Graduate Aptitude Test in Engineering (GATE)
-      - Participated in Kaggle competitions focused on applied machine learning
-      - Active open-source contributor with AI/ML projects on GitHub
+      - Qualified GATE (Graduate Aptitude Test in Engineering)
+      - Active open-source contributor with ML projects on GitHub
 
 design:
   theme: classic
-
 locale:
   language: english
-
 settings:
   render_command:
     output_folder: rendercv_output
