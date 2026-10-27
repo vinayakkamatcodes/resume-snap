@@ -1,6 +1,6 @@
 cv:
   name: Vinayak Kamat
-  headline: Junior AI/ML Engineer
+  headline: AI/ML Engineer | Generative AI, RAG & Production AI Systems
   location: Mumbai, India
   email: vinayakkamat001@gmail.com
   phone: "+917208114510"
@@ -9,22 +9,34 @@ cv:
       username: vinayak-kamat-81b8901a0
     - network: GitHub
       username: vinayakkamatcodes
+
   sections:
     summary:
-      - Junior AI/ML Engineer at KAN Innovations building production-ready AI systems. Experience with end-to-end RAG pipelines, PyTorch-to-ONNX inference optimization, and ML services on AWS (Lambda, ECR, DynamoDB). Built on-device AI with llama.cpp and a real-time hallucination detection gateway. Pursuing an MSc in Financial Engineering.
+      - AI/ML Engineer with hands-on experience developing production-oriented AI systems, Generative AI applications, Retrieval-Augmented Generation (RAG) pipelines, and computer vision models. Experienced in Python, PyTorch, FastAPI, LLM integration, embeddings, prompt engineering, model evaluation, and cloud-based ML deployment using AWS. Built an LLM hallucination detection and risk analysis gateway, optimized model inference using ONNX, and implemented offline LLM inference on Android devices. Focused on reliable AI systems, reusable software components, model performance, and continuous optimization.
 
     skills:
-      - label: Languages
+      - label: Programming Languages
         details: Python, C++, Dart, JavaScript
-      - label: ML & AI
-        details: PyTorch, Transformers, OpenCV, spaCy
-      - label: LLM & RAG
-        details: LangChain, LlamaIndex, GGUF models, prompt engineering, Chroma
-      - label: MLOps
-        details: MLflow, model versioning, experiment tracking
-      - label: Backend & DevOps
-        details: FastAPI, Flask, Docker, AWS (Lambda, S3, ECR, DynamoDB)
-      - label: Data
+
+      - label: Generative AI & LLMs
+        details: Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), Embeddings, Prompt Engineering, LangChain, LlamaIndex, GGUF Models, llama.cpp
+
+      - label: AI Evaluation & Reliability
+        details: RAG Pipeline Evaluation, Model Calibration, Hallucination Detection, Semantic Risk Assessment, Model Performance Optimization
+
+      - label: Machine Learning & Computer Vision
+        details: PyTorch, Transformers, OpenCV, spaCy, ONNX, Ulcer Detection, Model Inference Optimization
+
+      - label: Backend & API Engineering
+        details: FastAPI, Flask, REST APIs, Python Components, API Integration, Streaming Responses
+
+      - label: Cloud & Deployment
+        details: AWS Lambda, Amazon S3, Amazon ECR, Amazon DynamoDB, Docker, Production ML Pipelines
+
+      - label: MLOps & Monitoring
+        details: MLflow, Experiment Tracking, Model Versioning, Reproducible Workflows, Datadog
+
+      - label: Data Processing
         details: Pandas, NumPy
 
     experience:
@@ -34,46 +46,55 @@ cv:
         start_date: 2025-05
         end_date: present
         highlights:
-          - Improved model calibration to enhance reliability of ML predictions in production
-          - Optimized inference by converting PyTorch models to ONNX for faster runtime performance
-          - Integrated ML models into production pipelines using AWS (Lambda, ECR, S3, DynamoDB)
-          - Built and evaluated Retrieval-Augmented Generation (RAG) pipelines
-          - Used MLflow for experiment tracking, model versioning, and reproducible workflows
+          - Developed and maintained production-oriented AI/ML components, integrating machine learning models into application and deployment pipelines.
+          - Improved the calibration and reliability of machine learning predictions in production.
+          - Optimized model inference by converting PyTorch models to ONNX for improved runtime performance.
+          - Integrated ML models into cloud-based workflows using AWS Lambda, Amazon ECR, Amazon S3, and Amazon DynamoDB.
+          - Built and evaluated Retrieval-Augmented Generation (RAG) pipelines for LLM-powered applications.
+          - Used MLflow for experiment tracking, model versioning, and reproducible machine learning workflows.
+          - Developed reusable Python components for AI/ML integration and model deployment.
+
       - company: KAN Innovations
         position: ML Engineer Intern
         location: Mumbai, Maharashtra
         start_date: 2025-02
         end_date: 2025-05
         highlights:
-          - Built a PyTorch-based ulcer detection model achieving ~85% accuracy
-          - Improved performance of an eye posture detection model
+          - Developed a PyTorch-based ulcer detection model achieving approximately 85% accuracy.
+          - Improved the performance of a computer vision model for eye posture detection.
+          - Contributed to machine learning model development, evaluation, and performance improvement.
 
     projects:
       - name: Aethelgard
-        summary: AI governance gateway for real-time analysis of LLM outputs to detect hallucinations and risk factors.
+        summary: AI governance gateway for real-time LLM output analysis, hallucination detection, and semantic risk assessment.
         highlights:
-          - Built a real-time LLM response analyzer using a secondary "surgeon" model for semantic risk assessment
-          - Implemented a FastAPI gateway streaming risk metrics to Datadog
-          - Designed automated hallucination detection logic for safer AI deployments
+          - Built a real-time LLM response analysis pipeline using a secondary model for semantic risk assessment.
+          - Implemented a FastAPI gateway to process LLM outputs and stream risk metrics to Datadog.
+          - Designed automated hallucination detection logic to support AI output validation and more reliable AI deployments.
+          - Developed an AI safety-oriented architecture focused on identifying potentially unreliable or risky model responses.
+
       - name: nanoMind
-        summary: On-device AI chat app running LLMs completely offline using llama.cpp and Kotlin.
+        summary: Offline AI chat application enabling on-device LLM inference on Android devices.
         highlights:
-          - Enabled offline GGUF model inference on Android devices
-          - Implemented real-time token streaming using Kotlin Coroutines and Jetpack Compose
-          - Optimized LLM loading with ARM-specific performance improvements
+          - Integrated GGUF language models using llama.cpp to enable offline LLM inference without cloud dependency.
+          - Implemented real-time token streaming using Kotlin Coroutines and Jetpack Compose.
+          - Optimized LLM loading and inference for Android devices using ARM-specific performance improvements.
+
       - name: Financial AI Agent (Demo)
-        summary: Prototype AI agent for financial data retrieval and reasoning using Python and language models.
+        summary: Prototype AI agent for financial data retrieval, query routing, and language-model-based reasoning.
         highlights:
-          - Built retrieval and reasoning pipelines for financial insights
-          - Implemented modular Python components for query routing and response refinement
+          - Built retrieval and reasoning pipelines for financial information and insights.
+          - Implemented modular Python components for query routing and response refinement.
+          - Explored LLM-powered workflows for retrieving relevant information and generating contextual responses.
 
     education:
       - institution: WorldQuant University
         area: Financial Engineering
         degree: MSc
-        location: Remote, Washington DC
+        location: Remote
         start_date: 2025-09
         end_date: 2027-05
+
       - institution: Punjab Technical University
         area: Computer Science
         degree: B.Tech
@@ -82,9 +103,8 @@ cv:
         end_date: 2025-05
 
     achievements:
-      - Qualified the Graduate Aptitude Test in Engineering (GATE)
-      - Participated in Kaggle competitions focused on applied machine learning
-      - Active open-source contributor with AI/ML projects on GitHub
+      - Participated in Kaggle competitions focused on applied machine learning.
+      - Maintained open-source AI/ML projects on GitHub.
 
 design:
   theme: classic
