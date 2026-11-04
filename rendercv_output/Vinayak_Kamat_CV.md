@@ -2,29 +2,29 @@
 
 - Phone: +91 72081 14510
 - Email: [vinayakkamat001@gmail.com](mailto:vinayakkamat001@gmail.com)
-- Location: Mumbai, India
-- LinkedIn: [vinayak-kamat-81b8901a0](https://linkedin.com/in/vinayak-kamat-81b8901a0)
+- Location: Mumbai, India (Open to global relocation)
 - GitHub: [vinayakkamatcodes](https://github.com/vinayakkamatcodes)
+- LinkedIn: [vinayak-kamat-81b8901a0](https://linkedin.com/in/vinayak-kamat-81b8901a0)
 
 
 # Summary
-Junior AI/ML Engineer at KAN Innovations building production-ready AI systems. Experience with end-to-end RAG pipelines, PyTorch-to-ONNX inference optimization, and ML services on AWS (Lambda, ECR, DynamoDB). Built on-device AI with llama.cpp and a real-time hallucination detection gateway. Pursuing an MSc in Financial Engineering.
+Applied AI / Evaluation Research Engineer with 1+ year of production experience designing evaluations, building automated graders, and analysing LLM and agent failures. Built Aethelgard, a real-time LLM-as-judge evaluation gateway that scores outputs for hallucination and risk, streams metrics to Datadog, and converts failures into structured datasets. Hands-on with benchmark harnesses, tool-use agents, structured output validation, and experiment design across proprietary and open models. Active open-source contributor (Aethelgard, ocrify, fraud_detection, python_code_executor, nanoMind). Strong Python; can read a paper and turn it into a working evaluation system.
 
 # Skills
-**Languages:** Python, C++, Dart, JavaScript
+**Evaluation & Benchmarking:** Benchmark design, scoring rubrics, LLM-as-judge, automated graders, eval harnesses, validation pipelines, hallucination detection, adversarial/edge-case datasets, RL environments, model comparison experiments, ground-truth curation, error taxonomy, Datadog metrics
 
-**ML & AI:** PyTorch, Transformers, OpenCV, spaCy
+**LLMs, Agents & Post-Training:** Proprietary & open models, LangChain, LangGraph, LlamaIndex, tool-use agents, function calling, structured JSON outputs, ReAct, Chain-of-Thought, few-shot prompting, RAG pipelines, safety evaluations
 
-**LLM & RAG:** LangChain, LlamaIndex, GGUF models, prompt engineering, Chroma
+**Programming:** Python (primary), C++, JavaScript, SQL, FastAPI, Flask, REST APIs, Jupyter
 
-**MLOps:** MLflow, model versioning, experiment tracking
+**ML & Deep Learning:** PyTorch, Transformers, OpenCV, spaCy, ONNX, model calibration, classical ML (fraud detection)
 
-**Backend & DevOps:** FastAPI, Flask, Docker, AWS (Lambda, S3, ECR, DynamoDB)
+**MLOps, Cloud & Observability:** MLflow, Docker, Git, AWS (Lambda, S3, ECR, DynamoDB), CI/CD, Datadog, model monitoring, drift detection, experiment tracking
 
-**Data:** Pandas, NumPy
+**Data:** Pandas, NumPy, dataset construction
 
 # Experience
-## **KAN Innovations**, Junior AI/ML Engineer
+## **KAN Innovations**, AI/ML Engineer
 
 Mumbai, Maharashtra
 
@@ -32,17 +32,17 @@ May 2025 – present
 
 
 
-1 year 6 months
+1 year 7 months
 
-- Improved model calibration to enhance reliability of ML predictions in production
+- Designed and ran evaluation experiments on production RAG pipelines using LangChain/LlamaIndex and Chroma — defined scoring rubrics, measured retrieval accuracy and generation quality, and analysed failure cases to build iterative test sets
 
-- Optimized inference by converting PyTorch models to ONNX for faster runtime performance
+- Built automated graders and validation pipelines for LLM outputs, using structured JSON schema validation and function calling to catch malformed or hallucinated outputs before they reached downstream systems
 
-- Integrated ML models into production pipelines using AWS (Lambda, ECR, S3, DynamoDB)
+- Implemented LLM-as-judge evaluation logic to score output reliability, turning recurring failure patterns into adversarial test cases and prompt improvements
 
-- Built and evaluated Retrieval-Augmented Generation (RAG) pipelines
+- Deployed and monitored ML/LLM services on AWS (Lambda, ECR, DynamoDB); tracked experiment results, latency, and quality metrics in MLflow and Datadog for reproducible, auditable findings
 
-- Used MLflow for experiment tracking, model versioning, and reproducible workflows
+- Optimized PyTorch-to-ONNX inference to reduce latency and cost across evaluation runs and production serving
 
 
 
@@ -56,44 +56,66 @@ Feb 2025 – May 2025
 
 3 months
 
-- Built a PyTorch-based ulcer detection model achieving ~85% accuracy
+- Built a PyTorch-based detection model achieving ~85% accuracy, from dataset preparation through training and evaluation — including error analysis and edge-case identification
 
-- Improved performance of an eye posture detection model
+- Improved an existing posture detection model through data and training refinements, validating gains against a held-out benchmark
 
 
 
 # Projects
-## **Aethelgard**
+## **Aethelgard — LLM-as-Judge Evaluation & Guardrails**
 
-AI governance gateway for real-time analysis of LLM outputs to detect hallucinations and risk factors.
+Real-time evaluation gateway that performs autopsies on LLM hallucinations using Datadog and Vertex AI, scoring outputs for risk and converting failures into structured signals.
 
-- Built a real-time LLM response analyzer using a secondary "surgeon" model for semantic risk assessment
+- Built a FastAPI gateway using a secondary judge model for semantic risk scoring — a working LLM-as-judge evaluation harness streaming metrics to Datadog
 
-- Implemented a FastAPI gateway streaming risk metrics to Datadog
+- Designed automated grading logic and fallback mechanisms so low-confidence outputs degrade safely, turning failure detection into a dataset feedback loop
 
-- Designed automated hallucination detection logic for safer AI deployments
+- Implemented structured output validation (JSON schema) to flag malformed or unreliable LLM responses at the boundary
 
-
-
-## **nanoMind**
-
-On-device AI chat app running LLMs completely offline using llama.cpp and Kotlin.
-
-- Enabled offline GGUF model inference on Android devices
-
-- Implemented real-time token streaming using Kotlin Coroutines and Jetpack Compose
-
-- Optimized LLM loading with ARM-specific performance improvements
+- Public repo: github.com/vinayakkamatcodes/Aethelgard
 
 
 
-## **Financial AI Agent (Demo)**
+## **python_code_executor — Sandboxed Agent Tool-Use Harness**
 
-Prototype AI agent for financial data retrieval and reasoning using Python and language models.
+Isolated code-execution environment for evaluating agent tool use, code trajectories, and execution failures.
 
-- Built retrieval and reasoning pipelines for financial insights
+- Implemented a sandboxed Python execution harness (C++) for running and observing agent-generated code safely
 
-- Implemented modular Python components for query routing and response refinement
+- Directly applicable to trajectory-level agent evaluation and tool-use failure analysis
+
+- Public repo: github.com/vinayakkamatcodes/python_code_executor
+
+
+
+## **ocrify — Document AI Extraction Benchmark Foundation**
+
+Document extraction pipeline applying OCR and structured parsing to scanned inputs, with ground-truth comparison.
+
+- Built an OCR-driven extraction tool (Dart) — foundation for invoice/receipt-style structured extraction and ground-truth validation
+
+- Public repo: github.com/vinayakkamatcodes/ocrify
+
+
+
+## **fraud_detection — Applied ML & Evaluation on Financial Data**
+
+Fraud detection modeling on financial transaction data with metric-driven evaluation.
+
+- Built and evaluated classical ML models for fraud detection, including data prep, error analysis, and precision/recall trade-off benchmarking
+
+- Public repo: github.com/vinayakkamatcodes/fraud_detection
+
+
+
+## **nanoMind — On-Device Open Model Inference**
+
+Offline LLM app demonstrating low-latency inference of open models on constrained hardware.
+
+- Ran GGUF open-source models on Android via llama.cpp with ARM-specific optimizations and real-time token streaming — hands-on with open models beyond API providers
+
+- Public repo: github.com/vinayakkamatcodes/nanoMind
 
 
 
@@ -123,8 +145,8 @@ Sept 2021 – May 2025
 
 
 # Achievements
-Qualified the Graduate Aptitude Test in Engineering (GATE)
+Qualified GATE (Graduate Aptitude Test in Engineering)
 
-Participated in Kaggle competitions focused on applied machine learning
+Active open-source contributor — github.com/vinayakkamatcodes (Aethelgard, python_code_executor, ocrify, fraud_detection, nanoMind)
 
-Active open-source contributor with AI/ML projects on GitHub
+Participated in Kaggle competitions focused on applied machine learning and evaluation
