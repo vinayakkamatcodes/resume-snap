@@ -6,7 +6,7 @@
   name: "Vinayak Kamat",
   title: "Vinayak Kamat - CV",
   footer: context { [#emph[Vinayak Kamat -- #str(here().page())\/#str(counter(page).final().first())]] },
-  top-note: [ #emph[Last updated in Oct 2026] ],
+  top-note: [ #emph[Last updated in Nov 2026] ],
   locale-catalog-language: "en",
   text-direction: ltr,
   page-size: "us-letter",
@@ -80,58 +80,54 @@
   entries-highlights-space-between-bullet-and-text: 0.5em,
   date: datetime(
     year: 2026,
-    month: 10,
-    day: 18,
+    month: 11,
+    day: 4,
   ),
 )
 
 
 = Vinayak Kamat
 
-  #headline([Junior AI\/ML Engineer])
+  #headline([AI\/ML Engineer | Computer Vision, Generative Models & LLM Agents])
 
 #connections(
-  [#connection-with-icon("location-dot")[Mumbai, India]],
+  [#connection-with-icon("location-dot")[Mumbai, India (Open to relocation to Pune)]],
   [#link("mailto:vinayakkamat001@gmail.com", icon: false, if-underline: false, if-color: false)[#connection-with-icon("envelope")[vinayakkamat001\@gmail.com]]],
   [#link("tel:+91-72081-14510", icon: false, if-underline: false, if-color: false)[#connection-with-icon("phone")[072081 14510]]],
-  [#link("https://linkedin.com/in/vinayak-kamat-81b8901a0", icon: false, if-underline: false, if-color: false)[#connection-with-icon("linkedin")[vinayak-kamat-81b8901a0]]],
   [#link("https://github.com/vinayakkamatcodes", icon: false, if-underline: false, if-color: false)[#connection-with-icon("github")[vinayakkamatcodes]]],
+  [#link("https://linkedin.com/in/vinayak-kamat-81b8901a0", icon: false, if-underline: false, if-color: false)[#connection-with-icon("linkedin")[vinayak-kamat-81b8901a0]]],
 )
 
 
 == Summary
 
-Junior AI\/ML Engineer at KAN Innovations building production-ready AI systems. Experience with end-to-end RAG pipelines, PyTorch-to-ONNX inference optimization, and ML services on AWS (Lambda, ECR, DynamoDB). Built on-device AI with llama.cpp and a real-time hallucination detection gateway. Pursuing an MSc in Financial Engineering.
+AI\/ML Engineer with 1+ year of production experience building computer-vision and LLM-powered systems. Trained PyTorch detection models to \~85\% accuracy, optimized inference with OpenCV and ONNX, and built retrieval-augmented generation pipelines grounded in domain data. Hands-on with generative pipelines, LLM agents, function calling, and structured output extraction. Comfortable taking a model from research idea to production — measuring quality, catching failures, and iterating. Active open-source contributor across vision, document AI, and on-device LLM inference.
 
 == Skills
 
-#strong[Languages:] Python, C++, Dart, JavaScript
+#strong[Computer Vision & Generative:] PyTorch, OpenCV, Transformers, image detection & classification, inference optimization (ONNX), generative pipelines, model calibration
 
-#strong[ML & AI:] PyTorch, Transformers, OpenCV, spaCy
+#strong[LLMs & Agents:] LangChain, LangGraph, LlamaIndex, RAG pipelines, retrieval over catalogue\/domain data, function calling, structured JSON outputs, prompt engineering (few-shot, CoT, ReAct)
 
-#strong[LLM & RAG:] LangChain, LlamaIndex, GGUF models, prompt engineering, Chroma
+#strong[Programming:] Python (primary), C++, JavaScript, SQL, FastAPI, Flask, REST APIs
 
-#strong[MLOps:] MLflow, model versioning, experiment tracking
+#strong[MLOps & Cloud:] MLflow, Docker, Git, AWS (Lambda, S3, ECR, DynamoDB), CI\/CD, Datadog, model monitoring, drift detection
 
-#strong[Backend & DevOps:] FastAPI, Flask, Docker, AWS (Lambda, S3, ECR, DynamoDB)
-
-#strong[Data:] Pandas, NumPy
+#strong[Data:] Pandas, NumPy, dataset preparation
 
 == Experience
 
 #regular-entry(
   [
-    #strong[KAN Innovations], Junior AI\/ML Engineer
+    #strong[KAN Innovations], AI\/ML Engineer
 
-    - Improved model calibration to enhance reliability of ML predictions in production
+    - Built and evaluated production RAG pipelines using LangChain\/LlamaIndex and Chroma, grounding LLM outputs in retrieved domain data and validating quality on every release
 
-    - Optimized inference by converting PyTorch models to ONNX for faster runtime performance
+    - Implemented function calling and structured JSON extraction from documents, with schema validation and fallback handling for unreliable outputs
 
-    - Integrated ML models into production pipelines using AWS (Lambda, ECR, S3, DynamoDB)
+    - Deployed ML services on AWS (Lambda, ECR, DynamoDB); optimized PyTorch-to-ONNX inference to reduce latency for production models
 
-    - Built and evaluated Retrieval-Augmented Generation (RAG) pipelines
-
-    - Used MLflow for experiment tracking, model versioning, and reproducible workflows
+    - Tracked experiments, model versions, and quality metrics with MLflow; monitored production behavior with Datadog
 
   ],
   [
@@ -141,7 +137,7 @@ Junior AI\/ML Engineer at KAN Innovations building production-ready AI systems. 
 
     
 
-    1 year 6 months
+    1 year 7 months
 
   ],
 )
@@ -150,9 +146,9 @@ Junior AI\/ML Engineer at KAN Innovations building production-ready AI systems. 
   [
     #strong[KAN Innovations], ML Engineer Intern
 
-    - Built a PyTorch-based ulcer detection model achieving \~85\% accuracy
+    - Built a PyTorch-based image detection model achieving \~85\% accuracy, from dataset preparation through training and evaluation
 
-    - Improved performance of an eye posture detection model
+    - Improved an existing posture\/eye detection model through data augmentation and training refinements using OpenCV
 
   ],
   [
@@ -171,15 +167,13 @@ Junior AI\/ML Engineer at KAN Innovations building production-ready AI systems. 
 
 #regular-entry(
   [
-    #strong[Aethelgard]
+    #strong[nanoMind — On-Device LLM Inference]
 
-    #summary[AI governance gateway for real-time analysis of LLM outputs to detect hallucinations and risk factors.]
+    #summary[Offline LLM app running open models on constrained hardware — generative pipeline engineering end to end.]
 
-    - Built a real-time LLM response analyzer using a secondary \"surgeon\" model for semantic risk assessment
+    - Ran GGUF generative models on Android via llama.cpp with ARM-specific optimizations and real-time token streaming
 
-    - Implemented a FastAPI gateway streaming risk metrics to Datadog
-
-    - Designed automated hallucination detection logic for safer AI deployments
+    - Public repo: github.com\/vinayakkamatcodes\/nanoMind
 
   ],
   [
@@ -188,15 +182,30 @@ Junior AI\/ML Engineer at KAN Innovations building production-ready AI systems. 
 
 #regular-entry(
   [
-    #strong[nanoMind]
+    #strong[Aethelgard — LLM Quality Gateway]
 
-    #summary[On-device AI chat app running LLMs completely offline using llama.cpp and Kotlin.]
+    #summary[Real-time gateway that scores LLM outputs for hallucination and risk, keeping generative outputs reliable in production.]
 
-    - Enabled offline GGUF model inference on Android devices
+    - Built a FastAPI gateway using a secondary judge model to score generative outputs, with metrics streamed to Datadog
 
-    - Implemented real-time token streaming using Kotlin Coroutines and Jetpack Compose
+    - Designed fallback logic so low-confidence outputs degrade safely
 
-    - Optimized LLM loading with ARM-specific performance improvements
+    - Public repo: github.com\/vinayakkamatcodes\/Aethelgard
+
+  ],
+  [
+  ],
+)
+
+#regular-entry(
+  [
+    #strong[ocrify — Document Extraction Pipeline]
+
+    #summary[OCR-driven extraction pipeline applying computer vision and structured parsing to scanned documents.]
+
+    - Built an OCR-driven extraction tool (Dart) — computer-vision preprocessing plus structured output parsing
+
+    - Public repo: github.com\/vinayakkamatcodes\/ocrify
 
   ],
   [
@@ -207,11 +216,11 @@ Junior AI\/ML Engineer at KAN Innovations building production-ready AI systems. 
   [
     #strong[Financial AI Agent (Demo)]
 
-    #summary[Prototype AI agent for financial data retrieval and reasoning using Python and language models.]
+    #summary[Prototype agent for catalogue-style data retrieval and reasoning over financial data.]
 
-    - Built retrieval and reasoning pipelines for financial insights
+    - Built modular retrieval and reasoning pipelines with query routing and response refinement
 
-    - Implemented modular Python components for query routing and response refinement
+    - Demonstrates grounding LLM agents in a business's own structured data
 
   ],
   [
@@ -254,8 +263,8 @@ Junior AI\/ML Engineer at KAN Innovations building production-ready AI systems. 
 
 == Achievements
 
-Qualified the Graduate Aptitude Test in Engineering (GATE)
+Qualified GATE (Graduate Aptitude Test in Engineering)
+
+Active open-source contributor — github.com\/vinayakkamatcodes
 
 Participated in Kaggle competitions focused on applied machine learning
-
-Active open-source contributor with AI\/ML projects on GitHub

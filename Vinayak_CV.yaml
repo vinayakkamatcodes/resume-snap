@@ -1,71 +1,77 @@
 cv:
   name: Vinayak Kamat
-  headline: Junior AI/ML Engineer
-  location: Mumbai, India
+  headline: "AI/ML Engineer | Computer Vision, Generative Models & LLM Agents"
+  location: "Mumbai, India (Open to relocation to Pune)"
   email: vinayakkamat001@gmail.com
   phone: "+917208114510"
   social_networks:
-    - network: LinkedIn
-      username: vinayak-kamat-81b8901a0
     - network: GitHub
       username: vinayakkamatcodes
+    - network: LinkedIn
+      username: vinayak-kamat-81b8901a0
+
   sections:
     summary:
-      - Junior AI/ML Engineer at KAN Innovations building production-ready AI systems. Experience with end-to-end RAG pipelines, PyTorch-to-ONNX inference optimization, and ML services on AWS (Lambda, ECR, DynamoDB). Built on-device AI with llama.cpp and a real-time hallucination detection gateway. Pursuing an MSc in Financial Engineering.
+      - "AI/ML Engineer with 1+ year of production experience building computer-vision and LLM-powered systems. Trained PyTorch detection models to ~85% accuracy, optimized inference with OpenCV and ONNX, and built retrieval-augmented generation pipelines grounded in domain data. Hands-on with generative pipelines, LLM agents, function calling, and structured output extraction. Comfortable taking a model from research idea to production — measuring quality, catching failures, and iterating. Active open-source contributor across vision, document AI, and on-device LLM inference."
 
     skills:
-      - label: Languages
-        details: Python, C++, Dart, JavaScript
-      - label: ML & AI
-        details: PyTorch, Transformers, OpenCV, spaCy
-      - label: LLM & RAG
-        details: LangChain, LlamaIndex, GGUF models, prompt engineering, Chroma
-      - label: MLOps
-        details: MLflow, model versioning, experiment tracking
-      - label: Backend & DevOps
-        details: FastAPI, Flask, Docker, AWS (Lambda, S3, ECR, DynamoDB)
+      - label: Computer Vision & Generative
+        details: "PyTorch, OpenCV, Transformers, image detection & classification, inference optimization (ONNX), generative pipelines, model calibration"
+      - label: LLMs & Agents
+        details: "LangChain, LangGraph, LlamaIndex, RAG pipelines, retrieval over catalogue/domain data, function calling, structured JSON outputs, prompt engineering (few-shot, CoT, ReAct)"
+      - label: Programming
+        details: "Python (primary), C++, JavaScript, SQL, FastAPI, Flask, REST APIs"
+      - label: MLOps & Cloud
+        details: "MLflow, Docker, Git, AWS (Lambda, S3, ECR, DynamoDB), CI/CD, Datadog, model monitoring, drift detection"
       - label: Data
-        details: Pandas, NumPy
+        details: "Pandas, NumPy, dataset preparation"
 
     experience:
       - company: KAN Innovations
-        position: Junior AI/ML Engineer
+        position: AI/ML Engineer
         location: Mumbai, Maharashtra
         start_date: 2025-05
         end_date: present
         highlights:
-          - Improved model calibration to enhance reliability of ML predictions in production
-          - Optimized inference by converting PyTorch models to ONNX for faster runtime performance
-          - Integrated ML models into production pipelines using AWS (Lambda, ECR, S3, DynamoDB)
-          - Built and evaluated Retrieval-Augmented Generation (RAG) pipelines
-          - Used MLflow for experiment tracking, model versioning, and reproducible workflows
+          - "Built and evaluated production RAG pipelines using LangChain/LlamaIndex and Chroma, grounding LLM outputs in retrieved domain data and validating quality on every release"
+          - "Implemented function calling and structured JSON extraction from documents, with schema validation and fallback handling for unreliable outputs"
+          - "Deployed ML services on AWS (Lambda, ECR, DynamoDB); optimized PyTorch-to-ONNX inference to reduce latency for production models"
+          - "Tracked experiments, model versions, and quality metrics with MLflow; monitored production behavior with Datadog"
+
       - company: KAN Innovations
         position: ML Engineer Intern
         location: Mumbai, Maharashtra
         start_date: 2025-02
         end_date: 2025-05
         highlights:
-          - Built a PyTorch-based ulcer detection model achieving ~85% accuracy
-          - Improved performance of an eye posture detection model
+          - "Built a PyTorch-based image detection model achieving ~85% accuracy, from dataset preparation through training and evaluation"
+          - "Improved an existing posture/eye detection model through data augmentation and training refinements using OpenCV"
 
     projects:
-      - name: Aethelgard
-        summary: AI governance gateway for real-time analysis of LLM outputs to detect hallucinations and risk factors.
+      - name: "nanoMind — On-Device LLM Inference"
+        summary: "Offline LLM app running open models on constrained hardware — generative pipeline engineering end to end."
         highlights:
-          - Built a real-time LLM response analyzer using a secondary "surgeon" model for semantic risk assessment
-          - Implemented a FastAPI gateway streaming risk metrics to Datadog
-          - Designed automated hallucination detection logic for safer AI deployments
-      - name: nanoMind
-        summary: On-device AI chat app running LLMs completely offline using llama.cpp and Kotlin.
+          - "Ran GGUF generative models on Android via llama.cpp with ARM-specific optimizations and real-time token streaming"
+          - "Public repo: github.com/vinayakkamatcodes/nanoMind"
+
+      - name: "Aethelgard — LLM Quality Gateway"
+        summary: "Real-time gateway that scores LLM outputs for hallucination and risk, keeping generative outputs reliable in production."
         highlights:
-          - Enabled offline GGUF model inference on Android devices
-          - Implemented real-time token streaming using Kotlin Coroutines and Jetpack Compose
-          - Optimized LLM loading with ARM-specific performance improvements
-      - name: Financial AI Agent (Demo)
-        summary: Prototype AI agent for financial data retrieval and reasoning using Python and language models.
+          - "Built a FastAPI gateway using a secondary judge model to score generative outputs, with metrics streamed to Datadog"
+          - "Designed fallback logic so low-confidence outputs degrade safely"
+          - "Public repo: github.com/vinayakkamatcodes/Aethelgard"
+
+      - name: "ocrify — Document Extraction Pipeline"
+        summary: "OCR-driven extraction pipeline applying computer vision and structured parsing to scanned documents."
         highlights:
-          - Built retrieval and reasoning pipelines for financial insights
-          - Implemented modular Python components for query routing and response refinement
+          - "Built an OCR-driven extraction tool (Dart) — computer-vision preprocessing plus structured output parsing"
+          - "Public repo: github.com/vinayakkamatcodes/ocrify"
+
+      - name: "Financial AI Agent (Demo)"
+        summary: "Prototype agent for catalogue-style data retrieval and reasoning over financial data."
+        highlights:
+          - "Built modular retrieval and reasoning pipelines with query routing and response refinement"
+          - "Demonstrates grounding LLM agents in a business's own structured data"
 
     education:
       - institution: WorldQuant University
@@ -82,16 +88,14 @@ cv:
         end_date: 2025-05
 
     achievements:
-      - Qualified the Graduate Aptitude Test in Engineering (GATE)
-      - Participated in Kaggle competitions focused on applied machine learning
-      - Active open-source contributor with AI/ML projects on GitHub
+      - "Qualified GATE (Graduate Aptitude Test in Engineering)"
+      - "Active open-source contributor — github.com/vinayakkamatcodes"
+      - "Participated in Kaggle competitions focused on applied machine learning"
 
 design:
   theme: classic
-
 locale:
   language: english
-
 settings:
   render_command:
     output_folder: rendercv_output
