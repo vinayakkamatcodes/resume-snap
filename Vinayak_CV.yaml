@@ -1,7 +1,7 @@
 cv:
   name: Vinayak Kamat
-  headline: Junior AI/ML Engineer
-  location: Mumbai, India
+  headline: "AI/ML Engineer | LLM Agents, RAG & Production ML"
+  location: "Mumbai, India (Willing to relocate to Pune)"
   email: vinayakkamat001@gmail.com
   phone: "+917208114510"
   social_networks:
@@ -9,63 +9,66 @@ cv:
       username: vinayak-kamat-81b8901a0
     - network: GitHub
       username: vinayakkamatcodes
+
   sections:
     summary:
-      - Junior AI/ML Engineer at KAN Innovations building production-ready AI systems. Experience with end-to-end RAG pipelines, PyTorch-to-ONNX inference optimization, and ML services on AWS (Lambda, ECR, DynamoDB). Built on-device AI with llama.cpp and a real-time hallucination detection gateway. Pursuing an MSc in Financial Engineering.
+      - "AI/ML Engineer with 1+ year of production experience building LLM-powered systems. Hands-on with LangChain/LlamaIndex, RAG pipelines, and LLM evaluation. Built Aethelgard, a real-time hallucination detection gateway scoring LLM outputs via FastAPI and Datadog. Comfortable deploying on AWS and optimizing inference (PyTorch-to-ONNX). MSc Financial Engineering candidate with domain exposure to financial data workflows."
 
     skills:
-      - label: Languages
-        details: Python, C++, Dart, JavaScript
-      - label: ML & AI
-        details: PyTorch, Transformers, OpenCV, spaCy
-      - label: LLM & RAG
-        details: LangChain, LlamaIndex, GGUF models, prompt engineering, Chroma
-      - label: MLOps
-        details: MLflow, model versioning, experiment tracking
-      - label: Backend & DevOps
-        details: FastAPI, Flask, Docker, AWS (Lambda, S3, ECR, DynamoDB)
+      - label: LLM & Agent Frameworks
+        details: "LangChain, LangGraph, LlamaIndex, OpenAI API, Anthropic Claude API, Prompt Engineering (Few-shot, CoT, ReAct), Function Calling, Structured JSON Outputs"
+      - label: RAG & Vector Databases
+        details: "RAG pipelines, Chroma, FAISS, Embeddings, Retrieval evaluation, Chunking strategies"
+      - label: Programming
+        details: "Python, C++, JavaScript, SQL, FastAPI, Flask, REST APIs"
+      - label: ML & Deep Learning
+        details: "PyTorch, Transformers, OpenCV, spaCy, ONNX, Model Calibration"
+      - label: MLOps & Cloud
+        details: "MLflow, Docker, Git, AWS (Lambda, S3, ECR, DynamoDB), CI/CD, Datadog, Model Monitoring, Drift Detection"
       - label: Data
-        details: Pandas, NumPy
+        details: "Pandas, NumPy"
 
     experience:
       - company: KAN Innovations
-        position: Junior AI/ML Engineer
+        position: AI/ML Engineer
         location: Mumbai, Maharashtra
         start_date: 2025-05
         end_date: present
         highlights:
-          - Improved model calibration to enhance reliability of ML predictions in production
-          - Optimized inference by converting PyTorch models to ONNX for faster runtime performance
-          - Integrated ML models into production pipelines using AWS (Lambda, ECR, S3, DynamoDB)
-          - Built and evaluated Retrieval-Augmented Generation (RAG) pipelines
-          - Used MLflow for experiment tracking, model versioning, and reproducible workflows
+          - "Built and evaluated production RAG pipelines using LangChain/LlamaIndex and Chroma, implementing retrieval quality checks and output validation to measure accuracy"
+          - "Implemented function calling and structured JSON output validation for LLM-driven data extraction from financial documents"
+          - "Deployed ML services on AWS (Lambda, ECR, DynamoDB); optimized PyTorch-to-ONNX inference for latency reduction"
+          - "Used MLflow for experiment tracking, model versioning, and reproducible workflows"
+
       - company: KAN Innovations
         position: ML Engineer Intern
         location: Mumbai, Maharashtra
         start_date: 2025-02
         end_date: 2025-05
         highlights:
-          - Built a PyTorch-based ulcer detection model achieving ~85% accuracy
-          - Improved performance of an eye posture detection model
+          - "Built a PyTorch-based detection model achieving ~85% accuracy, from dataset preparation through training and evaluation"
+          - "Improved an existing posture detection model through data and training refinements"
 
     projects:
-      - name: Aethelgard
-        summary: AI governance gateway for real-time analysis of LLM outputs to detect hallucinations and risk factors.
+      - name: "Aethelgard — LLM Evaluation & Guardrails"
+        summary: "Real-time gateway that grades LLM outputs for hallucinations and risk, with observability."
         highlights:
-          - Built a real-time LLM response analyzer using a secondary "surgeon" model for semantic risk assessment
-          - Implemented a FastAPI gateway streaming risk metrics to Datadog
-          - Designed automated hallucination detection logic for safer AI deployments
-      - name: nanoMind
-        summary: On-device AI chat app running LLMs completely offline using llama.cpp and Kotlin.
+          - "Built a FastAPI gateway using a secondary model for semantic risk scoring, with metrics streamed to Datadog for continuous monitoring"
+          - "Designed automated evaluation logic and fallback mechanisms so low-confidence outputs degrade safely before reaching users"
+          - "Implemented structured output validation to catch malformed or unreliable LLM responses"
+
+      - name: "LangGraph Agent Demo — Tool Use & Structured Extraction"
+        summary: "Multi-step agentic workflow demonstrating tool use and structured JSON extraction."
         highlights:
-          - Enabled offline GGUF model inference on Android devices
-          - Implemented real-time token streaming using Kotlin Coroutines and Jetpack Compose
-          - Optimized LLM loading with ARM-specific performance improvements
-      - name: Financial AI Agent (Demo)
-        summary: Prototype AI agent for financial data retrieval and reasoning using Python and language models.
+          - "Built a LangGraph-based agent that routes queries, calls mock APIs (invoice/transaction lookup), and returns validated JSON outputs"
+          - "Implemented few-shot prompting and ReAct-style reasoning for reliable tool selection"
+          - "Added fallback handling for tool-call failures to keep the agent reliable"
+
+      - name: "Financial AI Agent (Demo)"
+        summary: "Prototype agent for financial data retrieval and reasoning using Python and LLMs."
         highlights:
-          - Built retrieval and reasoning pipelines for financial insights
-          - Implemented modular Python components for query routing and response refinement
+          - "Built modular retrieval and reasoning pipelines for financial insights"
+          - "Implemented query routing and response refinement with structured output parsing"
 
     education:
       - institution: WorldQuant University
@@ -82,16 +85,13 @@ cv:
         end_date: 2025-05
 
     achievements:
-      - Qualified the Graduate Aptitude Test in Engineering (GATE)
-      - Participated in Kaggle competitions focused on applied machine learning
-      - Active open-source contributor with AI/ML projects on GitHub
+      - "Qualified GATE (Graduate Aptitude Test in Engineering)"
+      - "Active open-source contributor with AI/ML projects on GitHub"
 
 design:
   theme: classic
-
 locale:
   language: english
-
 settings:
   render_command:
     output_folder: rendercv_output
