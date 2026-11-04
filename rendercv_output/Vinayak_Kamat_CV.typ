@@ -88,10 +88,10 @@
 
 = Vinayak Kamat
 
-  #headline([Applied AI \/ Evaluation Research Engineer | LLM Evaluation, Benchmarks & Agents])
+  #headline([AI Infrastructure & Product Engineer | LLM Systems, APIs & Observability])
 
 #connections(
-  [#connection-with-icon("location-dot")[Mumbai, India (Open to global relocation)]],
+  [#connection-with-icon("location-dot")[Mumbai, India (Open to relocation)]],
   [#link("mailto:vinayakkamat001@gmail.com", icon: false, if-underline: false, if-color: false)[#connection-with-icon("envelope")[vinayakkamat001\@gmail.com]]],
   [#link("tel:+91-72081-14510", icon: false, if-underline: false, if-color: false)[#connection-with-icon("phone")[072081 14510]]],
   [#link("https://github.com/vinayakkamatcodes", icon: false, if-underline: false, if-color: false)[#connection-with-icon("github")[vinayakkamatcodes]]],
@@ -101,21 +101,21 @@
 
 == Summary
 
-Applied AI \/ Evaluation Research Engineer with 1+ year of production experience designing evaluations, building automated graders, and analysing LLM and agent failures. Built Aethelgard, a real-time LLM-as-judge evaluation gateway that scores outputs for hallucination and risk, streams metrics to Datadog, and converts failures into structured datasets. Hands-on with benchmark harnesses, tool-use agents, structured output validation, and experiment design across proprietary and open models. Active open-source contributor (Aethelgard, ocrify, fraud\_detection, python\_code\_executor, nanoMind). Strong Python; can read a paper and turn it into a working evaluation system.
+Product-minded AI\/Infrastructure Engineer with 1+ year of production experience shipping backend services, APIs, and data pipelines around LLMs. Built Aethelgard, a real-time LLM evaluation gateway with FastAPI, model integration, and observability streaming to Datadog. Experienced with LLM APIs, model routing, structured output pipelines, cloud deployment (AWS), and production monitoring. Comfortable owning features end-to-end — from ambiguous prototype to deployed, observable production system. Active open-source contributor across LLM infra, document AI, and agent tooling.
 
 == Skills
 
-#strong[Evaluation & Benchmarking:] Benchmark design, scoring rubrics, LLM-as-judge, automated graders, eval harnesses, validation pipelines, hallucination detection, adversarial\/edge-case datasets, RL environments, model comparison experiments, ground-truth curation, error taxonomy, Datadog metrics
+#strong[LLM & Model Infrastructure:] LLM APIs (OpenAI, Anthropic Claude, Vertex AI), open-model inference (llama.cpp, GGUF), model integration, routing & fallback, structured JSON outputs, function calling, LangChain, LangGraph, LlamaIndex, RAG pipelines
 
-#strong[LLMs, Agents & Post-Training:] Proprietary & open models, LangChain, LangGraph, LlamaIndex, tool-use agents, function calling, structured JSON outputs, ReAct, Chain-of-Thought, few-shot prompting, RAG pipelines, safety evaluations
+#strong[Backend & APIs:] Python (primary), TypeScript\/JavaScript, C++, FastAPI, Flask, REST APIs, async services, data pipelines, background jobs
 
-#strong[Programming:] Python (primary), C++, JavaScript, SQL, FastAPI, Flask, REST APIs, Jupyter
+#strong[Cloud & Infrastructure:] AWS (Lambda, S3, ECR, DynamoDB), Docker, CI\/CD, Git, serverless deployment, inference optimization (PyTorch-to-ONNX)
 
-#strong[ML & Deep Learning:] PyTorch, Transformers, OpenCV, spaCy, ONNX, model calibration, classical ML (fraud detection)
+#strong[Observability & Evaluation Infra:] Datadog (metrics, logging, dashboards), MLflow (experiment tracking, model versioning), latency\/cost\/outcome logging, LLM-as-judge, automated graders, monitoring & drift detection
 
-#strong[MLOps, Cloud & Observability:] MLflow, Docker, Git, AWS (Lambda, S3, ECR, DynamoDB), CI\/CD, Datadog, model monitoring, drift detection, experiment tracking
+#strong[Data & Databases:] SQL, DynamoDB, S3, Pandas, NumPy, dataset pipelines
 
-#strong[Data:] Pandas, NumPy, dataset construction
+#strong[ML Foundations:] PyTorch, Transformers, OpenCV, spaCy, ONNX, model calibration
 
 == Experience
 
@@ -123,15 +123,15 @@ Applied AI \/ Evaluation Research Engineer with 1+ year of production experience
   [
     #strong[KAN Innovations], AI\/ML Engineer
 
-    - Designed and ran evaluation experiments on production RAG pipelines using LangChain\/LlamaIndex and Chroma — defined scoring rubrics, measured retrieval accuracy and generation quality, and analysed failure cases to build iterative test sets
+    - Owned LLM-powered services end-to-end — built FastAPI gateways, integrated model providers and internal APIs, and shipped from prototype to monitored production
 
-    - Built automated graders and validation pipelines for LLM outputs, using structured JSON schema validation and function calling to catch malformed or hallucinated outputs before they reached downstream systems
+    - Built and evaluated production RAG pipelines using LangChain\/LlamaIndex and Chroma, with validation pipelines and structured JSON output enforcement
 
-    - Implemented LLM-as-judge evaluation logic to score output reliability, turning recurring failure patterns into adversarial test cases and prompt improvements
+    - Implemented function calling and structured output validation with schema checks and fallback routing so malformed or low-confidence outputs degrade safely
 
-    - Deployed and monitored ML\/LLM services on AWS (Lambda, ECR, DynamoDB); tracked experiment results, latency, and quality metrics in MLflow and Datadog for reproducible, auditable findings
+    - Deployed services on AWS (Lambda, ECR, DynamoDB); optimized PyTorch-to-ONNX inference to cut latency and cost
 
-    - Optimized PyTorch-to-ONNX inference to reduce latency and cost across evaluation runs and production serving
+    - Instrumented production systems with MLflow and Datadog for experiment tracking, latency\/outcome logging, and monitoring — giving the team visibility into quality and cost
 
   ],
   [
@@ -150,9 +150,9 @@ Applied AI \/ Evaluation Research Engineer with 1+ year of production experience
   [
     #strong[KAN Innovations], ML Engineer Intern
 
-    - Built a PyTorch-based detection model achieving \~85\% accuracy, from dataset preparation through training and evaluation — including error analysis and edge-case identification
+    - Built a PyTorch-based detection model achieving \~85\% accuracy, from dataset preparation through training and evaluation
 
-    - Improved an existing posture detection model through data and training refinements, validating gains against a held-out benchmark
+    - Improved an existing posture detection model through data and training refinements
 
   ],
   [
@@ -171,15 +171,15 @@ Applied AI \/ Evaluation Research Engineer with 1+ year of production experience
 
 #regular-entry(
   [
-    #strong[Aethelgard — LLM-as-Judge Evaluation & Guardrails]
+    #strong[Aethelgard — LLM Evaluation Gateway & Observability]
 
-    #summary[Real-time evaluation gateway that performs autopsies on LLM hallucinations using Datadog and Vertex AI, scoring outputs for risk and converting failures into structured signals.]
+    #summary[Real-time gateway that scores LLM outputs for hallucination and risk, with production monitoring via Datadog and Vertex AI.]
 
-    - Built a FastAPI gateway using a secondary judge model for semantic risk scoring — a working LLM-as-judge evaluation harness streaming metrics to Datadog
+    - Built a FastAPI gateway integrating a secondary judge model for semantic risk scoring — a production service with model integration and structured output handling
 
-    - Designed automated grading logic and fallback mechanisms so low-confidence outputs degrade safely, turning failure detection into a dataset feedback loop
+    - Streamed risk and quality metrics to Datadog for continuous observability; designed automated fallback logic so low-confidence outputs degrade safely
 
-    - Implemented structured output validation (JSON schema) to flag malformed or unreliable LLM responses at the boundary
+    - Implemented validation pipelines to catch malformed LLM responses before they reach downstream services
 
     - Public repo: github.com\/vinayakkamatcodes\/Aethelgard
 
@@ -190,13 +190,28 @@ Applied AI \/ Evaluation Research Engineer with 1+ year of production experience
 
 #regular-entry(
   [
-    #strong[python\_code\_executor — Sandboxed Agent Tool-Use Harness]
+    #strong[Vidur — Async Data Pipeline]
 
-    #summary[Isolated code-execution environment for evaluating agent tool use, code trajectories, and execution failures.]
+    #summary[Cloud data pipeline with reliable asynchronous delivery for RAG-based report generation.]
 
-    - Implemented a sandboxed Python execution harness (C++) for running and observing agent-generated code safely
+    - Built an async S3-backed pipeline (JSON serialization, background uploads) so cloud transfer did not block execution
 
-    - Directly applicable to trajectory-level agent evaluation and tool-use failure analysis
+    - Used caching and background jobs to reduce redundant model calls and improve throughput
+
+    - Public repo: github.com\/vinayakkamatcodes
+
+  ],
+  [
+  ],
+)
+
+#regular-entry(
+  [
+    #strong[python\_code\_executor — Sandboxed Execution Service]
+
+    #summary[Isolated code-execution environment for running and observing agent-generated code safely.]
+
+    - Implemented a sandboxed Python execution harness (C++) suitable for agent tooling and distributed job execution
 
     - Public repo: github.com\/vinayakkamatcodes\/python\_code\_executor
 
@@ -207,43 +222,28 @@ Applied AI \/ Evaluation Research Engineer with 1+ year of production experience
 
 #regular-entry(
   [
-    #strong[ocrify — Document AI Extraction Benchmark Foundation]
+    #strong[nanoMind — On-Device Open-Model Inference]
 
-    #summary[Document extraction pipeline applying OCR and structured parsing to scanned inputs, with ground-truth comparison.]
+    #summary[Offline LLM app running open models on constrained hardware.]
 
-    - Built an OCR-driven extraction tool (Dart) — foundation for invoice\/receipt-style structured extraction and ground-truth validation
-
-    - Public repo: github.com\/vinayakkamatcodes\/ocrify
-
-  ],
-  [
-  ],
-)
-
-#regular-entry(
-  [
-    #strong[fraud\_detection — Applied ML & Evaluation on Financial Data]
-
-    #summary[Fraud detection modeling on financial transaction data with metric-driven evaluation.]
-
-    - Built and evaluated classical ML models for fraud detection, including data prep, error analysis, and precision\/recall trade-off benchmarking
-
-    - Public repo: github.com\/vinayakkamatcodes\/fraud\_detection
-
-  ],
-  [
-  ],
-)
-
-#regular-entry(
-  [
-    #strong[nanoMind — On-Device Open Model Inference]
-
-    #summary[Offline LLM app demonstrating low-latency inference of open models on constrained hardware.]
-
-    - Ran GGUF open-source models on Android via llama.cpp with ARM-specific optimizations and real-time token streaming — hands-on with open models beyond API providers
+    - Integrated open-model inference via llama.cpp with ARM-specific optimizations and real-time token streaming — hands-on with open-model infrastructure beyond API providers
 
     - Public repo: github.com\/vinayakkamatcodes\/nanoMind
+
+  ],
+  [
+  ],
+)
+
+#regular-entry(
+  [
+    #strong[ocrify — Document Extraction Pipeline]
+
+    #summary[OCR-driven extraction pipeline for scanned documents, with structured parsing.]
+
+    - Built an OCR-driven extraction tool (Dart) — a data pipeline foundation for document processing
+
+    - Public repo: github.com\/vinayakkamatcodes\/ocrify
 
   ],
   [
@@ -288,6 +288,4 @@ Applied AI \/ Evaluation Research Engineer with 1+ year of production experience
 
 Qualified GATE (Graduate Aptitude Test in Engineering)
 
-Active open-source contributor — github.com\/vinayakkamatcodes (Aethelgard, python\_code\_executor, ocrify, fraud\_detection, nanoMind)
-
-Participated in Kaggle competitions focused on applied machine learning and evaluation
+Active open-source contributor — github.com\/vinayakkamatcodes (Aethelgard, python\_code\_executor, ocrify, nanoMind)
