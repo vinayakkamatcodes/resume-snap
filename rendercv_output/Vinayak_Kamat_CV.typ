@@ -6,7 +6,7 @@
   name: "Vinayak Kamat",
   title: "Vinayak Kamat - CV",
   footer: context { [#emph[Vinayak Kamat -- #str(here().page())\/#str(counter(page).final().first())]] },
-  top-note: [ #emph[Last updated in Oct 2026] ],
+  top-note: [ #emph[Last updated in Nov 2026] ],
   locale-catalog-language: "en",
   text-direction: ltr,
   page-size: "us-letter",
@@ -80,15 +80,15 @@
   entries-highlights-space-between-bullet-and-text: 0.5em,
   date: datetime(
     year: 2026,
-    month: 10,
-    day: 18,
+    month: 11,
+    day: 9,
   ),
 )
 
 
 = Vinayak Kamat
 
-  #headline([Junior AI\/ML Engineer])
+  #headline([Python Backend Engineer | AI\/ML & LLM Infrastructure])
 
 #connections(
   [#connection-with-icon("location-dot")[Mumbai, India]],
@@ -101,21 +101,21 @@
 
 == Summary
 
-Junior AI\/ML Engineer at KAN Innovations building production-ready AI systems. Experience with end-to-end RAG pipelines, PyTorch-to-ONNX inference optimization, and ML services on AWS (Lambda, ECR, DynamoDB). Built on-device AI with llama.cpp and a real-time hallucination detection gateway. Pursuing an MSc in Financial Engineering.
+Python-focused AI\/ML Engineer at KAN Innovations with experience building and deploying production AI systems, LLM applications, and backend services. Hands-on experience with FastAPI, RAG pipelines, LLM response analysis, API integrations, and AWS infrastructure. Built Aethelgard, a FastAPI-based LLM governance gateway for real-time response risk analysis, and optimized ML inference using PyTorch and ONNX. Interested in building reliable, scalable AI infrastructure and developer tools.
 
 == Skills
 
-#strong[Languages:] Python, C++, Dart, JavaScript
+#strong[Programming:] Python, C++, JavaScript, Dart
 
-#strong[ML & AI:] PyTorch, Transformers, OpenCV, spaCy
+#strong[Backend & APIs:] FastAPI, Flask, REST APIs, API integration, Docker
 
-#strong[LLM & RAG:] LangChain, LlamaIndex, GGUF models, prompt engineering, Chroma
+#strong[LLM & AI Infrastructure:] LLM APIs, RAG, LangChain, LlamaIndex, llama.cpp, GGUF, Chroma, prompt engineering
 
-#strong[MLOps:] MLflow, model versioning, experiment tracking
+#strong[ML & Deep Learning:] PyTorch, Transformers, OpenCV, spaCy, ONNX
 
-#strong[Backend & DevOps:] FastAPI, Flask, Docker, AWS (Lambda, S3, ECR, DynamoDB)
+#strong[Cloud & MLOps:] AWS Lambda, S3, ECR, DynamoDB, MLflow, model versioning, experiment tracking
 
-#strong[Data:] Pandas, NumPy
+#strong[Data & Computing:] NumPy, Pandas, Linux
 
 == Experience
 
@@ -123,15 +123,15 @@ Junior AI\/ML Engineer at KAN Innovations building production-ready AI systems. 
   [
     #strong[KAN Innovations], Junior AI\/ML Engineer
 
-    - Improved model calibration to enhance reliability of ML predictions in production
+    - Built and evaluated Retrieval-Augmented Generation (RAG) pipelines for AI-powered applications.
 
-    - Optimized inference by converting PyTorch models to ONNX for faster runtime performance
+    - Integrated machine learning models into production services and deployment workflows using AWS Lambda, ECR, S3, and DynamoDB.
 
-    - Integrated ML models into production pipelines using AWS (Lambda, ECR, S3, DynamoDB)
+    - Optimized model inference by converting PyTorch models to ONNX, improving runtime performance.
 
-    - Built and evaluated Retrieval-Augmented Generation (RAG) pipelines
+    - Improved model calibration to enhance the reliability of production ML predictions.
 
-    - Used MLflow for experiment tracking, model versioning, and reproducible workflows
+    - Used MLflow for experiment tracking, model versioning, and reproducible ML workflows.
 
   ],
   [
@@ -141,7 +141,7 @@ Junior AI\/ML Engineer at KAN Innovations building production-ready AI systems. 
 
     
 
-    1 year 6 months
+    1 year 7 months
 
   ],
 )
@@ -150,9 +150,9 @@ Junior AI\/ML Engineer at KAN Innovations building production-ready AI systems. 
   [
     #strong[KAN Innovations], ML Engineer Intern
 
-    - Built a PyTorch-based ulcer detection model achieving \~85\% accuracy
+    - Developed a PyTorch-based ulcer detection model achieving approximately 85\% accuracy.
 
-    - Improved performance of an eye posture detection model
+    - Improved the performance of an eye posture detection model through model development and optimization.
 
   ],
   [
@@ -171,32 +171,17 @@ Junior AI\/ML Engineer at KAN Innovations building production-ready AI systems. 
 
 #regular-entry(
   [
-    #strong[Aethelgard]
+    #strong[Aethelgard | LLM Governance Gateway]
 
-    #summary[AI governance gateway for real-time analysis of LLM outputs to detect hallucinations and risk factors.]
+    #summary[FastAPI-based AI governance gateway for real-time LLM response analysis, hallucination detection, and risk assessment.]
 
-    - Built a real-time LLM response analyzer using a secondary \"surgeon\" model for semantic risk assessment
+    - Built an LLM response analysis pipeline using a secondary model for semantic risk assessment.
 
-    - Implemented a FastAPI gateway streaming risk metrics to Datadog
+    - Implemented a FastAPI gateway to process and analyze LLM responses.
 
-    - Designed automated hallucination detection logic for safer AI deployments
+    - Developed real-time risk metric streaming and Datadog integration for monitoring.
 
-  ],
-  [
-  ],
-)
-
-#regular-entry(
-  [
-    #strong[nanoMind]
-
-    #summary[On-device AI chat app running LLMs completely offline using llama.cpp and Kotlin.]
-
-    - Enabled offline GGUF model inference on Android devices
-
-    - Implemented real-time token streaming using Kotlin Coroutines and Jetpack Compose
-
-    - Optimized LLM loading with ARM-specific performance improvements
+    - Designed automated hallucination and response-risk detection logic to improve the reliability of AI applications.
 
   ],
   [
@@ -205,13 +190,30 @@ Junior AI\/ML Engineer at KAN Innovations building production-ready AI systems. 
 
 #regular-entry(
   [
-    #strong[Financial AI Agent (Demo)]
+    #strong[nanoMind | Offline AI Assistant]
 
-    #summary[Prototype AI agent for financial data retrieval and reasoning using Python and language models.]
+    #summary[On-device AI chat application running language models locally using llama.cpp and Kotlin.]
 
-    - Built retrieval and reasoning pipelines for financial insights
+    - Integrated GGUF language models for fully offline inference on Android devices.
 
-    - Implemented modular Python components for query routing and response refinement
+    - Implemented real-time token streaming using Kotlin Coroutines and Jetpack Compose.
+
+    - Optimized model loading and inference for ARM-based devices.
+
+  ],
+  [
+  ],
+)
+
+#regular-entry(
+  [
+    #strong[Financial AI Agent]
+
+    #summary[Python-based prototype for financial data retrieval and reasoning using language models.]
+
+    - Built retrieval and reasoning pipelines for financial information.
+
+    - Implemented modular components for query routing and response refinement.
 
   ],
   [
@@ -226,7 +228,7 @@ Junior AI\/ML Engineer at KAN Innovations building production-ready AI systems. 
 
   ],
   [
-    Remote, Washington DC
+    Remote
 
     Sept 2025 – May 2027
 
@@ -254,8 +256,8 @@ Junior AI\/ML Engineer at KAN Innovations building production-ready AI systems. 
 
 == Achievements
 
-Qualified the Graduate Aptitude Test in Engineering (GATE)
+Qualified the Graduate Aptitude Test in Engineering (GATE).
 
-Participated in Kaggle competitions focused on applied machine learning
+Participated in Kaggle competitions focused on applied machine learning.
 
-Active open-source contributor with AI\/ML projects on GitHub
+Active open-source contributor with AI\/ML projects on GitHub.
